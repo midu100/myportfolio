@@ -3,13 +3,13 @@ import { HiEnvelope, HiPhone, HiMapPin, HiPaperAirplane } from 'react-icons/hi2'
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaWhatsapp } from 'react-icons/fa6';
 
 const contactInfo = [
-  { icon: HiEnvelope, label: 'Email', value: 'your@email.com', href: 'mailto:your@email.com' },
-  { icon: HiPhone, label: 'Phone', value: '+880 1XXXXXXXXX', href: 'tel:+8801XXXXXXXXX' },
+  { icon: HiEnvelope, label: 'Email', value: 'kazimridulwebdev@gmail.com', href: 'kazimridulwebdev@gmail.com' },
+  { icon: HiPhone, label: 'Phone', value: '+880 1767982982', href: 'tel:+8801767982982' },
   { icon: HiMapPin, label: 'Location', value: 'Bangladesh', href: '#' },
 ];
 
 const socials = [
-  { icon: FaGithub, href: '#', label: 'GitHub' },
+  { icon: FaGithub, href: 'https://github.com/midu100', label: 'GitHub' },
   { icon: FaLinkedinIn, href: '#', label: 'LinkedIn' },
   { icon: FaFacebookF, href: '#', label: 'Facebook' },
   { icon: FaWhatsapp, href: '#', label: 'WhatsApp' },
