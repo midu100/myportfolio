@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const VideoIntro = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoUrl = ''; // তোমার video URL এখানে বসাও
+  const videoUrl = ''; // video URL
 
   return (
     <section id="video" className="section-padding relative overflow-hidden">
@@ -53,7 +53,7 @@ const VideoIntro = () => {
                   <div className="text-center p-8">
                     <HiPlayCircle className="text-primary/20 mx-auto mb-4" size={64} />
                     <p className="text-text-secondary text-lg font-display font-bold">Video Coming Soon</p>
-                    <p className="text-text-muted text-sm mt-2 font-sans">VideoIntro.jsx এ তোমার video URL বসাও</p>
+                    {/* <p className="text-text-muted text-sm mt-2 font-sans">VideoIntro.jsx এ তোমার video URL বসাও</p> */}
                   </div>
                 )}
               </div>

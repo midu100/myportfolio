@@ -4,7 +4,6 @@ import { HiCpuChip, HiWrenchScrewdriver } from 'react-icons/hi2';
 import { RiNextjsFill } from 'react-icons/ri';
 
 const skills = [
-
   { name: 'React.js', icon: FaReact, color: '#61DAFB' },
   { name: 'Next.js', icon: RiNextjsFill, color: '#61DAFB' },
   { name: 'Node.js', icon: FaNodeJs, color: '#68A063' },
