@@ -1,9 +1,12 @@
 import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaBootstrap } from 'react-icons/fa6';
 import { SiExpress, SiMongodb, SiTailwindcss, SiRedux, SiFirebase, SiJquery } from 'react-icons/si';
 import { HiCpuChip, HiWrenchScrewdriver } from 'react-icons/hi2';
+import { RiNextjsFill } from 'react-icons/ri';
 
 const skills = [
+
   { name: 'React.js', icon: FaReact, color: '#61DAFB' },
+  { name: 'Next.js', icon: RiNextjsFill, color: '#61DAFB' },
   { name: 'Node.js', icon: FaNodeJs, color: '#68A063' },
   { name: 'Express.js', icon: SiExpress, color: '#ffffff' },
   { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },

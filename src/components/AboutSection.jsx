@@ -20,7 +20,7 @@ const AboutSection = () => {
           {/* Left - About Text */}
           <div className="flex-1" data-aos="fade-right" data-aos-duration="800">
             <h3 className="font-display text-2xl lg:text-3xl font-bold mb-5 text-text-main leading-snug">
-              Passionate <span className="text-primary">Developer</span><br />Based in Bangladesh
+              Passionate <span className="text-primary">Developer</span><br />
             </h3>
             <p className="text-text-secondary leading-[1.85] mb-4 font-sans text-[15px]">
               I am a dedicated Full Stack Web Developer with expertise in building modern, 
@@ -38,7 +38,7 @@ const AboutSection = () => {
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-8">
               {[
                 { label: 'Name', value: 'Kazi Mridul' },
-                { label: 'Email', value: 'your@email.com' },
+                { label: 'Email', value: 'kazimridulwebdev@email.com' },
                 { label: 'Location', value: 'Bangladesh' },
                 { label: 'Experience', value: '2+ Years' },
               ].map((info, i) => (

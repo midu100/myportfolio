@@ -52,7 +52,7 @@ const ProfileCard = () => {
               <HiEnvelope size={14} /> Contact Me
             </span>
           </a>
-          <a href="https://drive.google.com/drive/folders/1IIUeTyDDHzrdGm99X6ps1oq8mLZsX9b2"
+          <a href=""
             className="flex-1 py-3 rounded-xl border border-dark-border text-text-secondary font-semibold text-xs text-center hover:border-primary/40 hover:text-primary transition-all duration-300 font-sans">
             <span className="flex items-center justify-center gap-1.5">
               <FaDownload size={12} /> Resume
