@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00e68a;
+  --color-primary-light: #33ffaa;
+  --color-primary-dark: #00b36b;
+  --color-dark-bg: #0a0a0f;
+  --color-dark-card: #111118;
+  --color-dark-card-hover: #18182a;
+  --color-dark-border: #1c1c28;
+  --color-text-main: #e4e4e7;
+  --color-text-secondary: #8b8fa3;
+  --color-text-muted: #545670;
+
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Syne', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Space Grotesk', ui-monospace, monospace;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
+  --animate-gradient: gradient-shift 8s ease infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-typewriter-blink: typewriter-blink 1s step-end infinite;
+  --animate-shimmer: shimmer 2.5s linear infinite;
+}
+
+/* === Keyframes === */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 230, 138, 0.12); }
+  50% { box-shadow: 0 0 50px rgba(0, 230, 138, 0.3); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes typewriter-blink {
+  50% { opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes fade-slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Base Styles === */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #e4e4e7;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0a0a0f; }
+::-webkit-scrollbar-thumb { background: #1c1c28; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #00e68a; }
+
+/* === Glass & Card Styles === */
+.glass-card {
+  background: rgba(17, 17, 24, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(28, 28, 40, 0.6);
+}
+
+.neon-border {
+  border: 1px solid rgba(0, 230, 138, 0.25);
+  box-shadow: 0 0 20px rgba(0, 230, 138, 0.08), inset 0 0 20px rgba(0, 230, 138, 0.03);
+}
+
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 230, 138, 0.35);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 230, 138, 0.08);
+}
+
+.skill-card-hover {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.skill-card-hover:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: rgba(0, 230, 138, 0.4);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 230, 138, 0.1);
+}
+
+/* === Text Styles === */
+.gradient-text {
+  background: linear-gradient(135deg, #00e68a 0%, #33ffaa 50%, #00b36b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === Layout === */
+.section-padding {
+  padding: 100px 5%;
+}
+
+/* === Background Patterns === */
+.bg-grid {
+  background-image: 
+    linear-gradient(rgba(28, 28, 40, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 28, 40, 0.25) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* === Decorative === */
+.glow-dot {
+  width: 6px;
+  height: 6px;
+  background: #00e68a;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00e68a, 0 0 20px rgba(0, 230, 138, 0.4);
+}
+
+/* === Section Divider === */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 230, 138, 0.15), transparent);
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+/* === Nav Tooltip === */
+.nav-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-5px);
+}
+.nav-item:hover .nav-tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* === Typewriter Cursor === */
+.typewriter-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: #00e68a;
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: typewriter-blink 1s step-end infinite;
+  box-shadow: 0 0 8px rgba(0, 230, 138, 0.5);
+}
+
+/* === Tag/Badge Shimmer === */
+.shimmer-badge {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-badge::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(0, 230, 138, 0.08), transparent);
+  animation: shimmer 3s linear infinite;
+}
+
+/* === Section Header Line === */
+.section-line {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #00e68a, #33ffaa);
+  border-radius: 10px;
+  margin: 16px auto 0;
+  box-shadow: 0 0 10px rgba(0, 230, 138, 0.3);
+}
