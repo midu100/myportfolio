@@ -17,7 +17,7 @@ const Footer = () => {
 
           {/* Center */}
           <p className="text-text-muted text-sm flex items-center gap-1.5">
-            Made with <FaHeart className="text-red-400 text-xs" /> using React & TailwindCSS
+            Developed by Kazi Mridul
           </p>
 
           {/* Right */}

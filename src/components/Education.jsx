@@ -2,37 +2,25 @@ import { HiAcademicCap, HiBriefcase } from 'react-icons/hi2';
 
 const education = [
   {
-    year: '2022 - Present',
-    title: 'Bachelor in Computer Science',
-    place: 'Your University Name',
-    desc: 'Studying computer science with focus on software engineering and web development.',
+    year: '2020 - 2026',
+    title: 'BSc in CSE',
+    place: 'American international university bangladesh (AIUB)',
+    desc: 'Studying computer science with focus on software engineering and web/app development and ai automation also.',
   },
   {
-    year: '2020 - 2022',
+    year: '2017 - 2019',
     title: 'Higher Secondary (HSC)',
-    place: 'Your College Name',
+    place: 'Govt. Debendra College,Manikganj',
     desc: 'Completed HSC with science background.',
   },
 ];
 
 const experience = [
   {
-    year: '2024 - Present',
-    title: 'Full Stack Developer',
-    place: 'Freelance / Company Name',
-    desc: 'Building complete web applications using MERN stack. Working with international clients on diverse projects.',
-  },
-  {
-    year: '2023 - 2024',
-    title: 'Frontend Developer',
-    place: 'Company / Freelance',
-    desc: 'Created responsive web interfaces using React.js, TailwindCSS, and modern JavaScript frameworks.',
-  },
-  {
-    year: '2022 - 2023',
-    title: 'Junior Web Developer',
-    place: 'Self Learning & Projects',
-    desc: 'Started web development journey with HTML, CSS, JavaScript. Built multiple practice projects.',
+    year: 'jan,2026 - apr,2026',
+    title: 'Web Developer Intern',
+    place: 'Unified IT',
+    desc: 'Building complete web applications using MERN stack. Working with many clients on diverse projects.',
   },
 ];
 
