@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaXTwitter, FaDownload } from 'react-icons/fa6';
 import { HiEnvelope } from 'react-icons/hi2';
+import mridul from '../assets/mridul.png'
 
 const ProfileCard = () => {
   return (
@@ -7,9 +8,9 @@ const ProfileCard = () => {
       {/* Profile Photo */}
       <div className="w-full aspect-square overflow-hidden relative shrink-0">
         <div className="w-full h-full bg-gradient-to-b from-primary/10 via-dark-card to-dark-card flex items-center justify-center">
-          {/* তোমার ছবি এখানে বসাও: */}
-          {/* <img src="/your-photo.jpg" alt="Kazi Mridul" className="w-full h-full object-cover" /> */}
-          <span className="text-7xl font-display font-extrabold gradient-text">KM</span>
+          {/* img */}
+          <img src={mridul} alt="Kazi Mridul" className="w-full h-full object-cover" />
+          {/* <span className="text-7xl font-display font-extrabold gradient-text">KM</span> */}
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-dark-card to-transparent" />
       </div>
