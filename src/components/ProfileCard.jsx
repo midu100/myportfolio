@@ -46,13 +46,13 @@ const ProfileCard = () => {
 
         {/* Action Buttons */}
         <div className="w-full flex gap-2 mt-4">
-          <a href="#contact"
+          <a href="/contact"
             className="flex-1 py-3 rounded-xl bg-primary text-dark-bg font-semibold text-xs text-center hover:bg-primary-light transition-all duration-300 shadow-[0_0_20px_rgba(0,230,138,0.15)] font-sans">
             <span className="flex items-center justify-center gap-1.5">
               <HiEnvelope size={14} /> Contact Me
             </span>
           </a>
-          <a href="#"
+          <a href="https://drive.google.com/drive/folders/1IIUeTyDDHzrdGm99X6ps1oq8mLZsX9b2"
             className="flex-1 py-3 rounded-xl border border-dark-border text-text-secondary font-semibold text-xs text-center hover:border-primary/40 hover:text-primary transition-all duration-300 font-sans">
             <span className="flex items-center justify-center gap-1.5">
               <FaDownload size={12} /> Resume
