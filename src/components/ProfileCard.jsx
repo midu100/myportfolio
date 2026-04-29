@@ -30,9 +30,9 @@ const ProfileCard = () => {
         {/* Social Icons */}
         <div className="flex items-center gap-2 mb-5">
           {[
-            { icon: FaGithub, href: '#' },
+            { icon: FaGithub, href: 'https://github.com/midu100' },
             { icon: FaLinkedinIn, href: '#' },
-            { icon: FaFacebookF, href: '#' },
+            { icon: FaFacebookF, href: 'https://www.facebook.com/kajzzi.mridul.al.taimur/' },
             { icon: FaXTwitter, href: '#' },
           ].map((social, i) => (
             <a key={i} href={social.href} target="_blank" rel="noreferrer"
