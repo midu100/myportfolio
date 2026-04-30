@@ -2,12 +2,12 @@ import { FaGithub, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
+    title: 'E-commece-FullStack',
     desc: 'A full-featured e-commerce platform with product management, cart system, payment integration, and admin dashboard.',
-    tags: ['React.js', 'Node.js', 'MongoDB', 'Redux'],
+    tags: ['Next.js', 'Node.js', 'MongoDB', 'RTK Query'],
     gradient: 'from-emerald-500/20 via-teal-500/8 to-cyan-500/20',
-    live: '#',
-    code: '#',
+    live: 'https://ecommerce-next-js-indol.vercel.app/',
+    code: 'https://github.com/midu100/E-commece-FullStack',
   },
   {
     title: 'AI Chat Application',
@@ -22,33 +22,33 @@ const projects = [
     desc: 'Premium real estate listing platform with property search, filtering, agent profiles, and interactive maps.',
     tags: ['React.js', 'Firebase', 'TailwindCSS'],
     gradient: 'from-amber-500/20 via-orange-500/8 to-rose-500/20',
-    live: '#',
-    code: '#',
+    live: 'https://real-estate-black-two.vercel.app/',
+    code: 'https://github.com/midu100/real-estate',
   },
   {
-    title: 'Task Management App',
-    desc: 'Collaborative task management tool with drag-and-drop boards, team assignments, and real-time updates.',
-    tags: ['React.js', 'Node.js', 'MongoDB', 'RTK Query'],
+    title: 'Ghorer_Bazar_Clone',
+    desc: 'This is a popular clone website in Bnagladesh.',
+    tags: ['React.js', 'Node.js', 'MongoDB', 'Redux'],
     gradient: 'from-blue-500/20 via-indigo-500/8 to-violet-500/20',
-    live: '#',
-    code: '#',
+    live: 'https://ghorerbazarclone.netlify.app/',
+    code: 'https://github.com/midu100/Ghorer_Bazar_Clone',
   },
   {
-    title: 'Social Media Dashboard',
-    desc: 'Analytics dashboard with real-time data visualization, user engagement metrics, and content management.',
+    title: 'All Project(30+)',
+    desc: 'This are my all projects link. ',
     tags: ['React.js', 'Redux', 'Chart.js', 'Express.js'],
     gradient: 'from-pink-500/20 via-rose-500/8 to-red-500/20',
     live: '#',
-    code: '#',
+    code: 'https://github.com/midu100',
   },
-  {
-    title: 'Portfolio Template',
-    desc: 'Modern, responsive portfolio template with smooth animations, dark theme, and customizable sections.',
-    tags: ['React.js', 'TailwindCSS', 'AOS', 'Vite'],
-    gradient: 'from-cyan-500/20 via-sky-500/8 to-blue-500/20',
-    live: '#',
-    code: '#',
-  },
+  // {
+  //   title: 'Portfolio Template',
+  //   desc: 'Modern, responsive portfolio template with smooth animations, dark theme, and customizable sections.',
+  //   tags: ['React.js', 'TailwindCSS', 'AOS', 'Vite'],
+  //   gradient: 'from-cyan-500/20 via-sky-500/8 to-blue-500/20',
+  //   live: '#',
+  //   code: '#',
+  // },
 ];
 
 const Projects = () => {
